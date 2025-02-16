@@ -3,7 +3,7 @@
 In the uploaded files, you’ll find my resume and a presentation that provides an overview of a series of projects I’ve worked on over the last three years.  
 
 ***** NEW *****
-I started a series of UX Design Cases! The first one is in the same folder - AURK
+I started a series of UX Design Cases! The first one is already here: AURK
 
 ***** Soon New cases:
 
