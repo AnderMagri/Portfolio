@@ -7,10 +7,10 @@ I started a series of UX Design Cases! The first one is in the same folder - AUR
 
 ***** Soon New cases:
 
-Bitso Withdraw process
+Bitso Withdraw process.
 Bitso is one of the biggest exchanges in Central and South America with 9M of users.
 
-Obinex Trading Platform
+Obinex Trading Platform.
 Obinex will disrupt the market with a trading platform with gamification
 
 
