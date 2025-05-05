@@ -5,9 +5,7 @@ AURK: A drag-and-drop challenge <br/>
 BITSO: Fixing the withdrawal process <br/>
 (Bitso is one of the biggest exchanges in Central and South America with 9M of users.)<br/>
 
->>>> SOON!
-Obinex Trading Platform.
-Obinex will disrupt the market with a trading platform with gamification<br/>
+
 
 
 If you’d like to explore my online portfolio with more in-depth content, please visit: [https://lighthousecreativelab.ca]
