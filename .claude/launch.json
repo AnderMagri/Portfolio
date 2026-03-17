@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portfolio",
+      "runtimeExecutable": "/usr/bin/python3",
+      "runtimeArgs": ["-c", "import os; os.chdir('/tmp'); from http.server import HTTPServer, SimpleHTTPRequestHandler; HTTPServer(('', 8080), SimpleHTTPRequestHandler).serve_forever()"],
+      "port": 8080
+    }
+  ]
+}

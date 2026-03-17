@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ander Magri — Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .hero p {
+      color: #6e7681;
+      font-size: 1.1rem;
+    }
+
+    /* Section headers */
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 32px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #21262d;
+    }
+
+    /* Card grid */
+    .card-grid {
+      display: grid;
+      gap: 24px;
+      margin-bottom: 72px;
+    }
+
+    .card-grid--ai {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .card-grid--ux {
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+
+    /* Cards */
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .card:hover {
+      border-color: #484f58;
+      transform: translateY(-4px);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    /* Image placeholder */
+    .card__image {
+      width: 100%;
+      background: #21262d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #484f58;
+      font-size: 0.85rem;
+    }
+
+    .card-grid--ai .card__image {
+      height: 300px;
+    }
+
+    .card-grid--ux .card__image {
+      height: 350px;
+    }
+
+    .card__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Card body */
+    .card__body {
+      padding: 16px 20px 20px;
+    }
+
+    .card__name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #e6edf3;
+    }
+
+    .card__badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 8px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card__badge--public {
+      background: rgba(63, 185, 80, 0.15);
+      color: #3fb950;
+      border: 1px solid rgba(63, 185, 80, 0.3);
+    }
+
+    .card__badge--private {
+      background: rgba(210, 153, 34, 0.15);
+      color: #d29922;
+      border: 1px solid rgba(210, 153, 34, 0.3);
+    }
+
+    .card__label {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 8px;
+      border-radius: 20px;
+      margin-left: 6px;
+      background: rgba(136, 98, 238, 0.15);
+      color: #a78bfa;
+      border: 1px solid rgba(136, 98, 238, 0.3);
+    }
+
+    .card__desc {
+      font-size: 0.88rem;
+      color: #6e7681;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 40px 24px;
+      color: #484f58;
+      font-size: 0.85rem;
+      border-top: 1px solid #21262d;
+    }
+
+    .footer a {
+      color: #8b949e;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .card-grid--ai,
+      .card-grid--ux {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Hero -->
+    <header class="hero">
+      <h1>Ander Magri</h1>
+      <p>AI Projects &amp; UX Case Studies</p>
+    </header>
+
+    <!-- AI Projects -->
+    <section>
+      <h2 class="section-title">AI Projects</h2>
+      <div class="card-grid card-grid--ai">
+
+        <!-- Sidebot -->
+        <div class="card">
+          <a href="https://github.com/AnderMagri/Sidebot" target="_blank" rel="noopener">
+            <div class="card__image">
+              <!-- Replace with: <img src="images/sidebot.png" alt="Sidebot"> -->
+              300 × 300
+            </div>
+            <div class="card__body">
+              <div class="card__name">Sidebot</div>
+              <span class="card__badge card__badge--private">Private</span>
+              <span class="card__label">Coming Soon</span>
+              <p class="card__desc">AI-powered PRD validation for Figma. Validate designs against requirements in real-time using Claude Desktop.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Sidebot-Bridge -->
+        <div class="card">
+          <a href="https://github.com/AnderMagri/Sidebot-Bridge" target="_blank" rel="noopener">
+            <div class="card__image">
+              <!-- Replace with: <img src="images/sidebot-bridge.png" alt="Sidebot Bridge"> -->
+              300 × 300
+            </div>
+            <div class="card__body">
+              <div class="card__name">Sidebot-Bridge</div>
+              <span class="card__badge card__badge--public">Public</span>
+              <p class="card__desc">Seamless localhost bridge connecting the Figma plugin to Claude Desktop — no more copy/paste.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Figma-Lore -->
+        <div class="card">
+          <a href="https://github.com/AnderMagri/Figma-Lore" target="_blank" rel="noopener">
+            <div class="card__image">
+              <!-- Replace with: <img src="images/design-lore.png" alt="Design Lore"> -->
+              300 × 300
+            </div>
+            <div class="card__body">
+              <div class="card__name">Design Lore</div>
+              <span class="card__badge card__badge--public">Public</span>
+              <p class="card__desc">A deep design knowledge base for Claude — persistent Skills that bring design expertise to every conversation.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- EchoFlow -->
+        <div class="card">
+          <a href="https://github.com/AnderMagri/EchoFlow" target="_blank" rel="noopener">
+            <div class="card__image">
+              <!-- Replace with: <img src="images/echoflow.png" alt="EchoFlow"> -->
+              300 × 300
+            </div>
+            <div class="card__body">
+              <div class="card__name">EchoFlow</div>
+              <span class="card__badge card__badge--private">Private</span>
+              <p class="card__desc">Chrome extension for UX Audits.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- RunIt-Figma -->
+        <div class="card">
+          <a href="https://www.figma.com/community/plugin/1613015601249621821" target="_blank" rel="noopener">
+            <div class="card__image">
+              <!-- Replace with: <img src="images/runit-figma.png" alt="RunIt Figma"> -->
+              300 × 300
+            </div>
+            <div class="card__body">
+              <div class="card__name">RunIt-Figma</div>
+              <span class="card__badge card__badge--public">Public</span>
+              <span class="card__label">Coming Soon</span>
+              <p class="card__desc">Figma plugin for rapid prototyping and design execution.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Aureum -->
+        <div class="card">
+          <a href="https://github.com/AnderMagri/Aureum" target="_blank" rel="noopener">
+            <div class="card__image">
+              <!-- Replace with: <img src="images/aureum.png" alt="Aureum"> -->
+              300 × 300
+            </div>
+            <div class="card__body">
+              <div class="card__name">Aureum</div>
+              <span class="card__badge card__badge--public">Public</span>
+              <span class="card__label">Coming Soon</span>
+              <p class="card__desc">AI and automation for social media inside Figma.</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- UX Case Studies -->
+    <section>
+      <h2 class="section-title">UX Cases</h2>
+      <div class="card-grid card-grid--ux">
+
+        <!-- AURK -->
+        <div class="card">
+          <a href="Ux Case Study - AURK.pdf" target="_blank" rel="noopener">
+            <div class="card__image">
+              <!-- Replace with: <img src="images/ux-aurk.png" alt="AURK Case Study"> -->
+              250 × 350
+            </div>
+            <div class="card__body">
+              <div class="card__name">AURK</div>
+              <p class="card__desc">A drag-and-drop challenge — rethinking interaction patterns for a smoother user experience.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- BITSO -->
+        <div class="card">
+          <a href="Ux Case Study - BITSO.pdf" target="_blank" rel="noopener">
+            <div class="card__image">
+              <!-- Replace with: <img src="images/ux-bitso.png" alt="BITSO Case Study"> -->
+              250 × 350
+            </div>
+            <div class="card__body">
+              <div class="card__name">BITSO</div>
+              <p class="card__desc">Fixing the withdrawal process for one of the biggest exchanges in Central and South America (9M+ users).</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- LISK -->
+        <div class="card">
+          <a href="Ux Case Study - LISK.pdf" target="_blank" rel="noopener">
+            <div class="card__image">
+              <!-- Replace with: <img src="images/ux-lisk.png" alt="LISK Case Study"> -->
+              250 × 350
+            </div>
+            <div class="card__body">
+              <div class="card__name">LISK</div>
+              <p class="card__desc">UX case study for the Lisk blockchain platform.</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>
+      <a href="https://lighthousecreativelab.ca" target="_blank">lighthousecreativelab.ca</a>
+    </p>
+  </footer>
+
+</body>
+</html>
