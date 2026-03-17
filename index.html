@@ -41,6 +41,20 @@
       font-size: 1.1rem;
     }
 
+    .hero__link {
+      margin-top: 12px;
+    }
+
+    .hero__link a {
+      color: #8b949e;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .hero__link a:hover {
+      text-decoration: underline;
+    }
+
     /* Section headers */
     .section-title {
       font-size: 1.6rem;
@@ -48,6 +62,13 @@
       margin-bottom: 32px;
       padding-bottom: 12px;
       border-bottom: 1px solid #21262d;
+    }
+
+    .section-blurb {
+      color: #6e7681;
+      font-size: 0.95rem;
+      margin-bottom: 28px;
+      max-width: 640px;
     }
 
     /* Card grid */
@@ -204,26 +225,26 @@
     <header class="hero">
       <h1>Ander Magri</h1>
       <p>AI Projects &amp; UX Case Studies</p>
+      <p class="hero__link"><a href="https://lighthousecreativelab.ca" target="_blank">lighthousecreativelab.ca</a></p>
     </header>
 
     <!-- AI Projects -->
     <section>
       <h2 class="section-title">AI Projects</h2>
+      <p class="section-blurb">Building with Claude, Claude MCP, and the Anthropic ecosystem to develop AI-powered solutions that streamline the design workflow.</p>
       <div class="card-grid card-grid--ai">
 
         <!-- Sidebot -->
         <div class="card">
-          <a href="https://github.com/AnderMagri/Sidebot" target="_blank" rel="noopener">
-            <div class="card__image">
-              <img src="images/sidebot.png" alt="Sidebot">
-            </div>
-            <div class="card__body">
-              <div class="card__name">Sidebot</div>
-              <span class="card__badge card__badge--private">Private</span>
-              <span class="card__label">Coming Soon</span>
-              <p class="card__desc">AI-powered PRD validation for Figma. Validate designs against requirements in real-time using Claude Desktop.</p>
-            </div>
-          </a>
+          <div class="card__image">
+            <img src="images/sidebot.png" alt="Sidebot">
+          </div>
+          <div class="card__body">
+            <div class="card__name">Sidebot</div>
+            <span class="card__badge card__badge--private">Private</span>
+            <span class="card__label">Coming Soon</span>
+            <p class="card__desc">AI-powered PRD validation for Figma. Validate designs against requirements in real-time using Claude Desktop.</p>
+          </div>
         </div>
 
         <!-- Sidebot-Bridge -->
@@ -256,16 +277,14 @@
 
         <!-- EchoFlow -->
         <div class="card">
-          <a href="https://github.com/AnderMagri/EchoFlow" target="_blank" rel="noopener">
-            <div class="card__image">
-              <img src="images/echoflow.png" alt="EchoFlow">
-            </div>
-            <div class="card__body">
-              <div class="card__name">EchoFlow</div>
-              <span class="card__badge card__badge--private">Private</span>
-              <p class="card__desc">Chrome extension for UX Audits.</p>
-            </div>
-          </a>
+          <div class="card__image">
+            <img src="images/echoflow.png" alt="EchoFlow">
+          </div>
+          <div class="card__body">
+            <div class="card__name">EchoFlow</div>
+            <span class="card__badge card__badge--private">Private</span>
+            <p class="card__desc">Chrome extension for UX Audits.</p>
+          </div>
         </div>
 
         <!-- RunIt-Figma -->
@@ -304,6 +323,7 @@
     <!-- UX Case Studies -->
     <section>
       <h2 class="section-title">UX Cases</h2>
+      <p class="section-blurb">A selection of UX case studies focused on crypto and fintech products.</p>
       <div class="card-grid card-grid--ux">
 
         <!-- AURK -->
